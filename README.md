@@ -1,5 +1,6 @@
 GreekAnagramSolver
 ==================
+Works for Python Version : Python 2.7.6
 
 A small anagram solver written in Python Programming Language.
 
