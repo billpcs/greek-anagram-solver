@@ -11,14 +11,13 @@ def haveSameLetters(dest , norm):
 		if dlst[i] != nlst[i] :
 			return False
 	return True
-	
 
 def main():
 	print "Πατήστε ENTER για να τερματίσετε το πρόγραμμα."
+	words = file("dict.txt" , "r").read().split()
 	scrambled = raw_input("Εισάγεται την ανακατεμένη λέξη. Το πρόγραμμα θα προσπαθήσει να βρεί τη λύση: ")
 	while scrambled != "" :
 		answerlist = [] 
-		words = file("dict.txt" , "r").read().split()
 		for normal in words:
 			if len(normal) == len(scrambled) :
 				if haveSameLetters(scrambled,normal):
