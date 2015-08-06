@@ -12,6 +12,8 @@ $ cd GreekAnagramSolver
 $ python runme.py
 ```
 
+Use only **CAPITAL** Greek letters.
+
 Have fun!
 
 Καλή διασκέδαση! 
