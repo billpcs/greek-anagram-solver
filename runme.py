@@ -15,7 +15,7 @@ def haveSameLetters(dest , norm):
 def main():
 	print("Πατήστε ENTER για να τερματίσετε το πρόγραμμα.")
 	words = file("dict.txt" , "r").read().split()
-	scrambled = raw_input("Εισάγεται την ανακατεμένη λέξη. Το πρόγραμμα θα προσπαθήσει να βρεί τη λύση: ")
+	scrambled = raw_input("Εισάγετε την ανακατεμένη λέξη. Το πρόγραμμα θα προσπαθήσει να βρεί τη λύση: ")
 	while scrambled != "" :
 		answerlist = [normal for normal in words if len(normal) == len(scrambled) and haveSameLetters(scrambled,normal)]
 		for answer in answerlist : print(answer) 
